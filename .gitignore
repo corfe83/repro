@@ -1,0 +1,6 @@
+*.apk
+*.exe
+repro
+key
+*.idsig
+log.txt

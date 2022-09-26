@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0.0.0"
+    package="ebiten.android.image.bug.test">
+
+    <application
+        android:label="Test Ebiten Image Invalidation Bug">
+
+        <activity
+            android:label="Test Ebiten Image Invalidation Bug"
+            android:name="org.golang.app.GoNativeActivity"
+            android:configChanges="screensize|orientation|keyboardHidden"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="go_" />
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
