@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/corfe83/goutil"
-	"github.com/corfe83/goutil/asset"
-	"github.com/corfe83/goutil/shape"
+	"github.com/corfe83/repro/shape"
+
+	"github.com/corfe83/repro/asset"
 	"github.com/hajimehoshi/ebiten/v2"
 	"github.com/hajimehoshi/ebiten/v2/text"
 	"golang.org/x/image/colornames"
@@ -123,7 +123,6 @@ func (g *Game) Layout(outsideWidth, outsideHeight int) (int, int) {
 
 var baseCircleImg image.Image
 func main() {
-	goutil.SetAndroidAppId("ebiten.android.image.bug.test")
 	baseCircleImg = shape.CreateCircleImage(4000, 2000, shape.EdgeGradientInnerFocus)
 
 	var g Game
