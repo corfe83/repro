@@ -2,8 +2,6 @@ module github.com/corfe83/repro
 
 go 1.19
 
-replace golang.org/x/mobile => github.com/corfe83/mobile v0.0.0-20220126201404-9448ca636f49
-
 require (
 	github.com/hajimehoshi/ebiten/v2 v2.4.5
 	golang.org/x/image v0.0.0-20220722155232-062f8c9fd539
